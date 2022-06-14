@@ -35,7 +35,7 @@ func init() { // 插件主体
 					nickname + "不在",
 					"？",
 					"我在我在",
-					"OK"
+					"OK",
 				}[rand.Intn(7)],
 			))
 		})
@@ -51,7 +51,7 @@ func init() { // 插件主体
 			case poke.Load(ctx.Event.GroupID).Acquire():
 				// 5分钟共8块命令牌 一次消耗1块命令牌
 				time.Sleep(time.Second * 1)
-				ctx.SendChain(message.Text("好玩吗？"))
+				ctx.SendChain(message.Text("好玩吗?"))
 			default:
 				// 频繁触发，不回复
 			}
