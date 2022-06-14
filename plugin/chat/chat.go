@@ -35,7 +35,8 @@ func init() { // 插件主体
 					nickname + "不在",
 					"？",
 					"我在我在",
-				}[rand.Intn(6)],
+					"OK"
+				}[rand.Intn(7)],
 			))
 		})
 	// 戳一戳
